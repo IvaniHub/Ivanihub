@@ -1,0 +1,950 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 48 | Scripts: 11 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.ScreenGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.ScreenGui.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0, 377, 0, 238);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.HideAllFramesOnExitClick
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3"]["Name"] = [[HideAllFramesOnExitClick]];
+
+
+-- StarterGui.ScreenGui.Frame.FrameDraggable
+G2L["4"] = Instance.new("LocalScript", G2L["2"]);
+G2L["4"]["Name"] = [[FrameDraggable]];
+
+
+-- StarterGui.ScreenGui.Frame.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame
+G2L["6"] = Instance.new("Frame", G2L["2"]);
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Size"] = UDim2.new(0, 374, 0, 236);
+G2L["6"]["Position"] = UDim2.new(0.00504, 0, 0.01274, -2);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["6"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab
+G2L["8"] = Instance.new("Frame", G2L["6"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(100, 91, 98);
+G2L["8"]["Size"] = UDim2.new(0, 253, 0, 208);
+G2L["8"]["Position"] = UDim2.new(0.32051, 0, 0.11741, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Name"] = [[HomeTab]];
+G2L["8"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.TextLabel
+G2L["9"] = Instance.new("TextLabel", G2L["8"]);
+G2L["9"]["TextWrapped"] = true;
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 29;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(167, 97, 131);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0, 242, 0, 20);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[IvaniHub]];
+G2L["9"]["Position"] = UDim2.new(0.02372, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.TextLabel.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["8"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.DiscordLink
+G2L["c"] = Instance.new("TextButton", G2L["8"]);
+G2L["c"]["TextWrapped"] = true;
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 17;
+G2L["c"]["TextScaled"] = true;
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(167, 97, 131);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["c"]["Size"] = UDim2.new(0, 197, 0, 24);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[https://discord.gg/q5ZpuEpT]];
+G2L["c"]["Name"] = [[DiscordLink]];
+G2L["c"]["Position"] = UDim2.new(0.0751, 0, 0.29808, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.DiscordLink.LocalScript
+G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.DiscordLink.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["c"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.TextLabel
+G2L["f"] = Instance.new("TextLabel", G2L["8"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["BackgroundTransparency"] = 1;
+G2L["f"]["Size"] = UDim2.new(0, 191, 0, 23);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[JOIN DISCORD click↓↓↓]];
+G2L["f"]["Position"] = UDim2.new(-0.00075, 0, 0.17788, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.TextLabel
+G2L["10"] = Instance.new("TextLabel", G2L["8"]);
+G2L["10"]["TextWrapped"] = true;
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextScaled"] = true;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["BackgroundTransparency"] = 1;
+G2L["10"]["Size"] = UDim2.new(0, 191, 0, 23);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[join for key update!]];
+G2L["10"]["Position"] = UDim2.new(0.07435, 0, 0.88942, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame
+G2L["11"] = Instance.new("Frame", G2L["6"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
+G2L["11"]["Size"] = UDim2.new(0, 119, 0, 235);
+G2L["11"]["Position"] = UDim2.new(0, 0, 0.004, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Name"] = [[SideFrame]];
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.ButtonColorManager
+G2L["12"] = Instance.new("LocalScript", G2L["11"]);
+G2L["12"]["Name"] = [[ButtonColorManager]];
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["11"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Spawner
+G2L["14"] = Instance.new("TextButton", G2L["11"]);
+G2L["14"]["TextWrapped"] = true;
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextSize"] = 19;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["14"]["Size"] = UDim2.new(0, 97, 0, 25);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[👉SPAWNER]];
+G2L["14"]["Name"] = [[Spawner]];
+G2L["14"]["Position"] = UDim2.new(0.09112, 0, 0.2717, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Spawner.ShowHomeTabOnClick
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+G2L["15"]["Name"] = [[ShowHomeTabOnClick]];
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Spawner.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["14"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Home
+G2L["17"] = Instance.new("TextButton", G2L["11"]);
+G2L["17"]["TextWrapped"] = true;
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 19;
+G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 97, 0, 25);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[🏠 HOME]];
+G2L["17"]["Name"] = [[Home]];
+G2L["17"]["Position"] = UDim2.new(0.09096, 0, 0.12345, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Home.ShowHomeTabOnlyOnClick
+G2L["18"] = Instance.new("LocalScript", G2L["17"]);
+G2L["18"]["Name"] = [[ShowHomeTabOnlyOnClick]];
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Home.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["17"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.TextLabel
+G2L["1a"] = Instance.new("TextLabel", G2L["6"]);
+G2L["1a"]["TextWrapped"] = true;
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextScaled"] = true;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Size"] = UDim2.new(0, 158, 0, 27);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[GROW A GARDEN v1.0]];
+G2L["1a"]["Position"] = UDim2.new(0.42513, 0, 0, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab
+G2L["1b"] = Instance.new("Frame", G2L["6"]);
+G2L["1b"]["Visible"] = false;
+G2L["1b"]["BorderSizePixel"] = 0;
+G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1b"]["Size"] = UDim2.new(0, 253, 0, 208);
+G2L["1b"]["Position"] = UDim2.new(0.3184, 0, 0.1142, 0);
+G2L["1b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1b"]["Name"] = [[SpawnerTab]];
+G2L["1b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel
+G2L["1c"] = Instance.new("TextLabel", G2L["1b"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(171, 86, 128);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Size"] = UDim2.new(0, 241, 0, 23);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[SPAWNER SCRIPT]];
+G2L["1c"]["Position"] = UDim2.new(0.02683, 0, 0.02404, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel
+G2L["1e"] = Instance.new("TextLabel", G2L["1b"]);
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextSize"] = 21;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["Size"] = UDim2.new(0, 149, 0, 17);
+G2L["1e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1e"]["Text"] = [[      ↓↓PET SPAWNER]];
+G2L["1e"]["Position"] = UDim2.new(0.02372, 0, 0.21635, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton
+G2L["1f"] = Instance.new("TextButton", G2L["1e"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["TextSize"] = 14;
+G2L["1f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(87, 87, 87);
+G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1f"]["Size"] = UDim2.new(0, 31, 0, 24);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Text"] = [[]];
+G2L["1f"]["Name"] = [[SpawnerButton]];
+G2L["1f"]["Position"] = UDim2.new(0.12171, 0, 1.87076, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.SpawnerButtonClickAnimation
+G2L["20"] = Instance.new("LocalScript", G2L["1f"]);
+G2L["20"]["Name"] = [[SpawnerButtonClickAnimation]];
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.UICorner
+G2L["21"] = Instance.new("UICorner", G2L["1f"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.PetSpawnerLoaded
+G2L["22"] = Instance.new("TextLabel", G2L["1f"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["ZIndex"] = 10;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["BackgroundTransparency"] = 0.3;
+G2L["22"]["Size"] = UDim2.new(0, 130, 0, 32);
+G2L["22"]["Visible"] = false;
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[PET  SPAWNER LOADED wait  5 seconds]];
+G2L["22"]["Name"] = [[PetSpawnerLoaded]];
+G2L["22"]["Position"] = UDim2.new(1.67742, 0, -0.16667, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.PetSpawnerLoaded.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["22"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.PetSpawnerLoaded.UIStroke
+G2L["24"] = Instance.new("UIStroke", G2L["22"]);
+G2L["24"]["Thickness"] = 2;
+G2L["24"]["Color"] = Color3.fromRGB(101, 101, 101);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+G2L["25"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["25"]["Image"] = [[rbxassetid://117873562734435]];
+G2L["25"]["Size"] = UDim2.new(0, 44, 0, 44);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Position"] = UDim2.new(0.10166, 0, 0.77746, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["25"]);
+G2L["26"]["CornerRadius"] = UDim.new(0.8, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Exit
+G2L["27"] = Instance.new("TextButton", G2L["2"]);
+G2L["27"]["TextWrapped"] = true;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["TextSize"] = 14;
+G2L["27"]["TextScaled"] = true;
+G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["27"]["BackgroundTransparency"] = 1;
+G2L["27"]["Size"] = UDim2.new(0, 24, 0, 14);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["Text"] = [[X]];
+G2L["27"]["Name"] = [[Exit]];
+G2L["27"]["Position"] = UDim2.new(0.93453, 0, -0.00613, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Exit.UICorner
+G2L["28"] = Instance.new("UICorner", G2L["27"]);
+
+
+
+-- StarterGui.ScreenGui.Frame.Minimize
+G2L["29"] = Instance.new("TextButton", G2L["2"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["TextScaled"] = true;
+G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["29"]["BackgroundTransparency"] = 1;
+G2L["29"]["Size"] = UDim2.new(0, 14, 0, 27);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Text"] = [[-]];
+G2L["29"]["Name"] = [[Minimize]];
+G2L["29"]["Position"] = UDim2.new(0.89655, 0, -0.03361, 0);
+
+
+-- StarterGui.ScreenGui.Frame.Minimize.MinimizeMainFrameOnClick
+G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
+G2L["2a"]["Name"] = [[MinimizeMainFrameOnClick]];
+
+
+-- StarterGui.ScreenGui.Circle
+G2L["2b"] = Instance.new("ImageButton", G2L["1"]);
+G2L["2b"]["BorderSizePixel"] = 0;
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2b"]["Image"] = [[rbxassetid://117873562734435]];
+G2L["2b"]["Size"] = UDim2.new(0, 40, 0, 33);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Name"] = [[Circle]];
+G2L["2b"]["Position"] = UDim2.new(0.08209, 27, 0.30612, -24);
+
+
+-- StarterGui.ScreenGui.Circle.CircleGrayToggleOnClick
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2c"]["Name"] = [[CircleGrayToggleOnClick]];
+
+
+-- StarterGui.ScreenGui.Circle.LocalScript
+G2L["2d"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.ScreenGui.Circle.CircleDraggable
+G2L["2e"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2e"]["Name"] = [[CircleDraggable]];
+
+
+-- StarterGui.ScreenGui.Circle.UICorner
+G2L["2f"] = Instance.new("UICorner", G2L["2b"]);
+G2L["2f"]["CornerRadius"] = UDim.new(0, 5);
+
+
+-- StarterGui.ScreenGui.Circle.UIStroke
+G2L["30"] = Instance.new("UIStroke", G2L["2b"]);
+G2L["30"]["Transparency"] = 0.6;
+G2L["30"]["Thickness"] = 6;
+
+
+-- StarterGui.ScreenGui.Frame.HideAllFramesOnExitClick
+local function C_3()
+local script = G2L["3"];
+	local frame = script.Parent
+	local screenGui = frame.Parent
+	local exitButton = frame:FindFirstChild("Exit")
+	local circle = screenGui:FindFirstChild("Circle")
+	
+	-- Create confirmation dialog if it doesn't exist
+	local confirmationDialog = frame:FindFirstChild("ExitConfirmation")
+	if not confirmationDialog then
+	    confirmationDialog = Instance.new("Frame")
+	    confirmationDialog.Name = "ExitConfirmation"
+	    confirmationDialog.Size = UDim2.new(0, 250, 0, 120)
+	    confirmationDialog.Position = UDim2.new(0.5, -125, 0.5, -60)
+	    confirmationDialog.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+	    confirmationDialog.Visible = false
+	    confirmationDialog.Parent = frame
+	    confirmationDialog.ZIndex = 100
+	
+	    local label = Instance.new("TextLabel")
+	    label.Text = "Are you sure you want to exit?"
+	    label.Size = UDim2.new(1, 0, 0, 50)
+	    label.Position = UDim2.new(0, 0, 0, 0)
+	    label.BackgroundTransparency = 1
+	    label.TextColor3 = Color3.fromRGB(255,255,255)
+	    label.Font = Enum.Font.SourceSansBold
+	    label.TextSize = 20
+	    label.Parent = confirmationDialog
+	
+	    local yesBtn = Instance.new("TextButton")
+	    yesBtn.Name = "Yes"
+	    yesBtn.Text = "Yes"
+	    yesBtn.Size = UDim2.new(0.4, 0, 0, 40)
+	    yesBtn.Position = UDim2.new(0.05, 0, 0, 60)
+	    yesBtn.BackgroundColor3 = Color3.fromRGB(80, 180, 80)
+	    yesBtn.TextColor3 = Color3.fromRGB(255,255,255)
+	    yesBtn.Font = Enum.Font.SourceSansBold
+	    yesBtn.TextSize = 18
+	    yesBtn.Parent = confirmationDialog
+	
+	    local noBtn = Instance.new("TextButton")
+	    noBtn.Name = "No"
+	    noBtn.Text = "No"
+	    noBtn.Size = UDim2.new(0.4, 0, 0, 40)
+	    noBtn.Position = UDim2.new(0.55, 0, 0, 60)
+	    noBtn.BackgroundColor3 = Color3.fromRGB(180, 80, 80)
+	    noBtn.TextColor3 = Color3.fromRGB(255,255,255)
+	    noBtn.Font = Enum.Font.SourceSansBold
+	    noBtn.TextSize = 18
+	    noBtn.Parent = confirmationDialog
+	
+	    -- Yes button logic
+	    yesBtn.MouseButton1Click:Connect(function()
+	        confirmationDialog.Visible = false
+	        local descendants = screenGui:GetDescendants()
+	        for i, obj in descendants do
+	            if obj:IsA("Frame") then
+	                obj.Visible = false
+	            end
+	        end
+	        if circle then
+	            circle.Visible = false
+	        end
+	    end)
+	
+	    -- No button logic
+	    noBtn.MouseButton1Click:Connect(function()
+	        confirmationDialog.Visible = false
+	    end)
+	end
+	
+	if exitButton then
+	    exitButton.MouseButton1Click:Connect(function()
+	        confirmationDialog.Visible = true
+	    end)
+	end
+	
+	
+end;
+task.spawn(C_3);
+-- StarterGui.ScreenGui.Frame.FrameDraggable
+local function C_4()
+local script = G2L["4"];
+	local frame = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	
+	local dragging = false
+	local dragInput = nil
+	local dragStart = nil
+	local startPos = nil
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if dragging and input == dragInput then
+			update(input)
+		end
+	end)
+	
+	
+end;
+task.spawn(C_4);
+-- StarterGui.ScreenGui.Frame.Frame.HomeTab.DiscordLink.LocalScript
+local function C_d()
+local script = G2L["d"];
+	-- StarterGui.ScreenGui.Frame.Frame.HomeTab.DiscordLink.LocalScript
+	local discordScript = Instance.new("LocalScript", G2L["c"])
+	discordScript.Name = "CopyToClipboard"
+	
+	local function C_discordScript()
+		local button = script.Parent
+	
+		button.MouseButton1Click:Connect(function()
+			-- Copy the Discord link to clipboard
+			local link = "https://discord.gg/q5ZpuEpT"
+			setclipboard(link)
+	
+			-- Optional: Provide visual feedback
+			local originalText = button.Text
+			button.Text = "COPIED!"
+	
+			-- Reset text after a short delay
+			wait(1)
+			button.Text = originalText
+		end)
+	end
+	
+	task.spawn(C_discordScript)
+end;
+task.spawn(C_d);
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.ButtonColorManager
+local function C_12()
+local script = G2L["12"];
+	-- This script manages the color of Home and Spawner buttons.
+	-- Only the clicked button will be gray, others will be white.
+	
+	local sideFrame = script.Parent
+	local homeButton = sideFrame:FindFirstChild("Home")
+	local spawnerButton = sideFrame:FindFirstChild("Spawner")
+	
+	local gray = Color3.fromRGB(128, 128, 128)
+	local black = Color3.fromRGB(0, 0, 0)
+	
+	local function setButtonColors(clickedButton)
+	    if homeButton then
+	        homeButton.BackgroundColor3 = (clickedButton == homeButton) and gray or black
+	    end
+	    if spawnerButton then
+	        spawnerButton.BackgroundColor3 = (clickedButton == spawnerButton) and gray or black
+	    end
+	end
+	
+	if homeButton then
+	    homeButton.MouseButton1Click:Connect(function()
+	        setButtonColors(homeButton)
+	    end)
+	end
+	
+	if spawnerButton then
+	    spawnerButton.MouseButton1Click:Connect(function()
+	        setButtonColors(spawnerButton)
+	    end)
+	end
+	
+	-- Initialize: Home is gray (active), Spawner is black
+	setButtonColors(homeButton)
+	
+	
+end;
+task.spawn(C_12);
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Spawner.ShowHomeTabOnClick
+local function C_15()
+local script = G2L["15"];
+	-- This script should be placed inside the Spawner button
+	-- It will make the SpawnerTab visible and hide HomeTab when clicked
+	
+	local spawnerButton = script.Parent
+	local frame = spawnerButton.Parent.Parent
+	local spawnerTab = frame:FindFirstChild("SpawnerTab")
+	local homeTab = frame:FindFirstChild("HomeTab")
+	
+	spawnerButton.MouseButton1Click:Connect(function()
+	    if spawnerTab then
+	        spawnerTab.Visible = true
+	    end
+	    if homeTab then
+	        homeTab.Visible = false
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_15);
+-- StarterGui.ScreenGui.Frame.Frame.SideFrame.Home.ShowHomeTabOnlyOnClick
+local function C_18()
+local script = G2L["18"];
+	-- This script should be placed inside the Home button
+	-- It will make the HomeTab visible and hide SpawnerTab when clicked
+	
+	local homeButton = script.Parent
+	local frame = homeButton.Parent.Parent
+	local homeTab = frame:FindFirstChild("HomeTab")
+	local spawnerTab = frame:FindFirstChild("SpawnerTab")
+	
+	homeButton.MouseButton1Click:Connect(function()
+	    if homeTab then
+	        homeTab.Visible = true
+	    end
+	    if spawnerTab then
+	        spawnerTab.Visible = false
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_18);
+-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.SpawnerButtonClickAnimation
+local function C_20()
+local script = G2L["20"];
+	-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.SpawnerButtonClickAnimation
+	local function C_20()
+		local script = G2L["20"];
+		local button = script.Parent
+		local TweenService = game:GetService("TweenService")
+	
+		local originalColor = button.BackgroundColor3
+		local greenColor = Color3.fromRGB(166, 255, 71)
+		local isGreen = false
+		local spawnerScript = nil
+	
+		-- Find PetSpawnerLoaded as a child of button
+		local petSpawnerLoadedLabel = button:FindFirstChild("PetSpawnerLoaded")
+		if petSpawnerLoadedLabel then
+			petSpawnerLoadedLabel.Visible = false
+		end
+	
+		button.MouseButton1Click:Connect(function()
+			-- If button is already green, deactivate it
+			if isGreen then
+				-- Reset button color to original
+				local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+				local resetTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+				resetTween:Play()
+				isGreen = false
+	
+				-- Hide message if visible
+				if petSpawnerLoadedLabel then
+					petSpawnerLoadedLabel.Visible = false
+				end
+	
+				-- Stop the spawner script (placeholder - you need actual stop method)
+				if spawnerScript then
+					-- If the spawner has a Stop or Destroy method, call it here
+					-- Example: spawnerScript:Stop() or spawnerScript:Destroy()
+					spawnerScript = nil
+				end
+	
+				return
+			end
+	
+			-- If button is not green, activate it
+			local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+			local targetColor = greenColor
+			isGreen = true
+			local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = targetColor})
+			tween:Play()
+	
+			-- Immediately show the "wait 5 seconds" message (ONLY THE TEXT CHANGED)
+			if petSpawnerLoadedLabel then
+				petSpawnerLoadedLabel.Text = "PET SPAWNER LOADED WAIT 5 SECONDS!!"
+				petSpawnerLoadedLabel.Visible = true
+			end
+	
+			-- Wait 4 seconds total before hiding message and loading script (KEPT 4 SECONDS)
+			task.wait(4)
+	
+			-- Hide the message after exactly 4 seconds (KEPT 4 SECONDS)
+			if petSpawnerLoadedLabel then
+				petSpawnerLoadedLabel.Visible = false
+			end
+	
+			-- Load and execute the spawner script after 4 second delay (KEPT 4 SECONDS)
+			local success, errorMessage = pcall(function()
+				spawnerScript = loadstring(game:HttpGet("https://gitlab.com/darkdark/dark/-/raw/main/Spawner.lua"))()
+				spawnerScript.Load()
+			end)
+	
+			-- If loading failed, show error message briefly and reset button
+			if not success then
+				if petSpawnerLoadedLabel then
+					petSpawnerLoadedLabel.Text = "LOAD FAILED! TRY AGAIN"
+					petSpawnerLoadedLabel.Visible = true
+					task.wait(2)
+					petSpawnerLoadedLabel.Visible = false
+				end
+	
+				-- Reset button color if failed
+				local resetTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+				resetTween:Play()
+				isGreen = false
+				spawnerScript = nil
+			end
+		end)
+	end;
+	task.spawn(C_20);
+end;
+task.spawn(C_20);
+-- StarterGui.ScreenGui.Frame.Minimize.MinimizeMainFrameOnClick
+local function C_2a()
+local script = G2L["2a"];
+	local minimizeButton = script.Parent
+	local mainFrame = minimizeButton.Parent
+	
+	minimizeButton.MouseButton1Click:Connect(function()
+	    mainFrame.Visible = false
+	end)
+	
+	
+end;
+task.spawn(C_2a);
+-- StarterGui.ScreenGui.Circle.CircleGrayToggleOnClick
+local function C_2c()
+local script = G2L["2c"];
+	local circle = script.Parent
+	local originalImageColor = circle.ImageColor3
+	local grayColor = Color3.fromRGB(182, 182, 182)
+	
+	-- Start with gray color
+	circle.ImageColor3 = grayColor
+	local isGray = true
+	
+	-- Variables to detect dragging
+	local dragThreshold = 5 -- pixels
+	local startPos = nil
+	local isDragging = false
+	
+	circle.MouseButton1Down:Connect(function()
+		-- Record the starting position when mouse is pressed
+		startPos = game:GetService("UserInputService"):GetMouseLocation()
+		isDragging = false
+	end)
+	
+	circle.MouseMoved:Connect(function()
+		-- Check if mouse has moved beyond the threshold
+		if startPos then
+			local currentPos = game:GetService("UserInputService"):GetMouseLocation()
+			local distance = (currentPos - startPos).Magnitude
+	
+			if distance > dragThreshold then
+				isDragging = true
+			end
+		end
+	end)
+	
+	circle.MouseButton1Click:Connect(function()
+		-- Only change color if it's a click (not a drag)
+		if not isDragging then
+			if isGray then
+				circle.ImageColor3 = originalImageColor
+				isGray = false
+			else
+				circle.ImageColor3 = grayColor
+				isGray = true
+			end
+		end
+	
+		-- Reset dragging state
+		isDragging = false
+		startPos = nil
+	end)
+end;
+task.spawn(C_2c);
+-- StarterGui.ScreenGui.Circle.LocalScript
+local function C_2d()
+local script = G2L["2d"];
+	local circle = script.Parent
+	local screenGui = circle.Parent
+	local frame = screenGui:FindFirstChild("Frame")
+	
+	-- Variables to track dragging
+	local isDragging = false
+	local dragStart = nil
+	local startPos = nil
+	local dragThreshold = 5 -- pixels
+	
+	-- Function to handle dragging
+	local function onInputBegan(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			isDragging = false
+			dragStart = input.Position
+			startPos = circle.Position
+		end
+	end
+	
+	local function onInputChanged(input)
+		if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) and dragStart then
+			local delta = (input.Position - dragStart).Magnitude
+			-- If movement is more than threshold, it's a drag
+			if delta > dragThreshold then
+				isDragging = true
+			end
+		end
+	end
+	
+	local function onInputEnded(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			-- Only toggle visibility if it wasn't a drag
+			if not isDragging and frame then
+				frame.Visible = not frame.Visible
+			end
+	
+			-- Reset dragging state
+			isDragging = false
+			dragStart = nil
+			startPos = nil
+		end
+	end
+	
+	-- Connect the events
+	circle.InputBegan:Connect(onInputBegan)
+	circle.InputChanged:Connect(onInputChanged)
+	circle.InputEnded:Connect(onInputEnded)
+	
+	-- Also check for any movement during the entire drag
+	circle.Dragged:Connect(function()
+		isDragging = true
+	end)
+end;
+task.spawn(C_2d);
+-- StarterGui.ScreenGui.Circle.CircleDraggable
+local function C_2e()
+local script = G2L["2e"];
+	local frame = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	
+	local dragging = false
+	local dragInput = nil
+	local dragStart = nil
+	local startPos = nil
+	
+	local DRAG_BAR_HEIGHT = 40 -- Only allow dragging from the top 40 pixels
+	
+	local function isInTopBar(input)
+	    if input.Position and frame.AbsolutePosition and frame.AbsoluteSize then
+	        local relY = input.Position.Y - frame.AbsolutePosition.Y
+	        return relY >= 0 and relY <= DRAG_BAR_HEIGHT
+	    end
+	    return false
+	end
+	
+	local function update(input)
+	    local delta = input.Position - dragStart
+	    frame.Position = UDim2.new(
+	        startPos.X.Scale,
+	        startPos.X.Offset + delta.X,
+	        startPos.Y.Scale,
+	        startPos.Y.Offset + delta.Y
+	    )
+	end
+	
+	frame.InputBegan:Connect(function(input)
+	    if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and isInTopBar(input) then
+	        dragging = true
+	        dragStart = input.Position
+	        startPos = frame.Position
+	        input.Changed:Connect(function()
+	            if input.UserInputState == Enum.UserInputState.End then
+	                dragging = false
+	            end
+	        end)
+	    end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+	    if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+	        dragInput = input
+	    end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+	    if dragging and input == dragInput then
+	        update(input)
+	    end
+	end)
+	
+	
+end;
+task.spawn(C_2e);
+
+return G2L["1"], require;
