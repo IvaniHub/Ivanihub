@@ -1,13 +1,13 @@
 --[=[
  d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88' Y8b 88    88   88'        VP  8D      88      88    88 d8' `8b 
 88      88    88    88            odD'      88      88    88 88ooo88 
 88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+88. 8 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 48 | Scripts: 11 | Modules: 0 | Tags: 0
+-- Instances: 49 | Scripts: 11 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -331,103 +331,119 @@ G2L["24"]["Thickness"] = 2;
 G2L["24"]["Color"] = Color3.fromRGB(101, 101, 101);
 
 
--- StarterGui.ScreenGui.Frame.ImageLabel
-G2L["25"] = Instance.new("ImageLabel", G2L["2"]);
+-- StarterGui.ScreenGui.Frame.Frame.TextLabel
+G2L["25"] = Instance.new("TextLabel", G2L["6"]);
+G2L["25"]["TextWrapped"] = true;
 G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextScaled"] = true;
 G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
--- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["25"]["Image"] = [[rbxassetid://117873562734435]];
-G2L["25"]["Size"] = UDim2.new(0, 44, 0, 44);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundTransparency"] = 1;
+G2L["25"]["Size"] = UDim2.new(0, 97, 0, 25);
 G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["25"]["Position"] = UDim2.new(0.10166, 0, 0.77746, 0);
+G2L["25"]["Text"] = [[IvaniHub]];
+G2L["25"]["Position"] = UDim2.new(0.02941, 0, 0.00847, 0);
+
+
+-- StarterGui.ScreenGui.Frame.ImageLabel
+G2L["26"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["26"]["Image"] = [[rbxassetid://117873562734435]];
+G2L["26"]["Size"] = UDim2.new(0, 44, 0, 44);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Position"] = UDim2.new(0.10166, 0, 0.77746, 0);
 
 
 -- StarterGui.ScreenGui.Frame.ImageLabel.UICorner
-G2L["26"] = Instance.new("UICorner", G2L["25"]);
-G2L["26"]["CornerRadius"] = UDim.new(0.8, 0);
+G2L["27"] = Instance.new("UICorner", G2L["26"]);
+G2L["27"]["CornerRadius"] = UDim.new(0.8, 0);
 
 
 -- StarterGui.ScreenGui.Frame.Exit
-G2L["27"] = Instance.new("TextButton", G2L["2"]);
-G2L["27"]["TextWrapped"] = true;
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["TextSize"] = 14;
-G2L["27"]["TextScaled"] = true;
-G2L["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["27"]["BackgroundTransparency"] = 1;
-G2L["27"]["Size"] = UDim2.new(0, 24, 0, 14);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Text"] = [[X]];
-G2L["27"]["Name"] = [[Exit]];
-G2L["27"]["Position"] = UDim2.new(0.93453, 0, -0.00613, 0);
+G2L["28"] = Instance.new("TextButton", G2L["2"]);
+G2L["28"]["TextWrapped"] = true;
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["TextSize"] = 14;
+G2L["28"]["TextScaled"] = true;
+G2L["28"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["28"]["BackgroundTransparency"] = 1;
+G2L["28"]["Size"] = UDim2.new(0, 24, 0, 14);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"]["Text"] = [[X]];
+G2L["28"]["Name"] = [[Exit]];
+G2L["28"]["Position"] = UDim2.new(0.93453, 0, -0.00613, 0);
 
 
 -- StarterGui.ScreenGui.Frame.Exit.UICorner
-G2L["28"] = Instance.new("UICorner", G2L["27"]);
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
 
 
 
 -- StarterGui.ScreenGui.Frame.Minimize
-G2L["29"] = Instance.new("TextButton", G2L["2"]);
-G2L["29"]["TextWrapped"] = true;
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["TextSize"] = 14;
-G2L["29"]["TextScaled"] = true;
-G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["29"]["BackgroundTransparency"] = 1;
-G2L["29"]["Size"] = UDim2.new(0, 14, 0, 27);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["29"]["Text"] = [[-]];
-G2L["29"]["Name"] = [[Minimize]];
-G2L["29"]["Position"] = UDim2.new(0.89655, 0, -0.03361, 0);
+G2L["2a"] = Instance.new("TextButton", G2L["2"]);
+G2L["2a"]["TextWrapped"] = true;
+G2L["2a"]["BorderSizePixel"] = 0;
+G2L["2a"]["TextSize"] = 14;
+G2L["2a"]["TextScaled"] = true;
+G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2a"]["BackgroundTransparency"] = 1;
+G2L["2a"]["Size"] = UDim2.new(0, 14, 0, 27);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2a"]["Text"] = [[-]];
+G2L["2a"]["Name"] = [[Minimize]];
+G2L["2a"]["Position"] = UDim2.new(0.89655, 0, -0.03361, 0);
 
 
 -- StarterGui.ScreenGui.Frame.Minimize.MinimizeMainFrameOnClick
-G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
-G2L["2a"]["Name"] = [[MinimizeMainFrameOnClick]];
+G2L["2b"] = Instance.new("LocalScript", G2L["2a"]);
+G2L["2b"]["Name"] = [[MinimizeMainFrameOnClick]];
 
 
 -- StarterGui.ScreenGui.Circle
-G2L["2b"] = Instance.new("ImageButton", G2L["1"]);
-G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2c"] = Instance.new("ImageButton", G2L["1"]);
+G2L["2c"]["BorderSizePixel"] = 0;
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2b"]["Image"] = [[rbxassetid://117873562734435]];
-G2L["2b"]["Size"] = UDim2.new(0, 40, 0, 33);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2b"]["Name"] = [[Circle]];
-G2L["2b"]["Position"] = UDim2.new(0.08209, 27, 0.30612, -24);
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["AnchorPoint"] = Vector2.new(0, 0.5);
+G2L["2c"]["Image"] = [[rbxassetid://117873562734435]];
+G2L["2c"]["Size"] = UDim2.new(0, 40, 0, 33);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Name"] = [[Circle]];
+G2L["2c"]["Position"] = UDim2.new(0.08209, 27, 0.30612, -24);
 
 
 -- StarterGui.ScreenGui.Circle.CircleGrayToggleOnClick
-G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
-G2L["2c"]["Name"] = [[CircleGrayToggleOnClick]];
+G2L["2d"] = Instance.new("LocalScript", G2L["2c"]);
+G2L["2d"]["Name"] = [[CircleGrayToggleOnClick]];
 
 
 -- StarterGui.ScreenGui.Circle.LocalScript
-G2L["2d"] = Instance.new("LocalScript", G2L["2b"]);
+G2L["2e"] = Instance.new("LocalScript", G2L["2c"]);
 
 
 
 -- StarterGui.ScreenGui.Circle.CircleDraggable
-G2L["2e"] = Instance.new("LocalScript", G2L["2b"]);
-G2L["2e"]["Name"] = [[CircleDraggable]];
+G2L["2f"] = Instance.new("LocalScript", G2L["2c"]);
+G2L["2f"]["Name"] = [[CircleDraggable]];
 
 
 -- StarterGui.ScreenGui.Circle.UICorner
-G2L["2f"] = Instance.new("UICorner", G2L["2b"]);
-G2L["2f"]["CornerRadius"] = UDim.new(0, 5);
+G2L["30"] = Instance.new("UICorner", G2L["2c"]);
+G2L["30"]["CornerRadius"] = UDim.new(0, 5);
 
 
 -- StarterGui.ScreenGui.Circle.UIStroke
-G2L["30"] = Instance.new("UIStroke", G2L["2b"]);
-G2L["30"]["Transparency"] = 0.6;
-G2L["30"]["Thickness"] = 6;
+G2L["31"] = Instance.new("UIStroke", G2L["2c"]);
+G2L["31"]["Transparency"] = 0.6;
+G2L["31"]["Thickness"] = 6;
 
 
 -- StarterGui.ScreenGui.Frame.HideAllFramesOnExitClick
@@ -679,7 +695,6 @@ local function C_20()
 local script = G2L["20"];
 	-- StarterGui.ScreenGui.Frame.Frame.SpawnerTab.TextLabel.SpawnerButton.SpawnerButtonClickAnimation
 	local function C_20()
-		local script = G2L["20"];
 		local button = script.Parent
 		local TweenService = game:GetService("TweenService")
 	
@@ -688,86 +703,74 @@ local script = G2L["20"];
 		local isGreen = false
 		local spawnerScript = nil
 	
-		-- Find PetSpawnerLoaded as a child of button
 		local petSpawnerLoadedLabel = button:FindFirstChild("PetSpawnerLoaded")
 		if petSpawnerLoadedLabel then
 			petSpawnerLoadedLabel.Visible = false
 		end
 	
 		button.MouseButton1Click:Connect(function()
-			-- If button is already green, deactivate it
 			if isGreen then
-				-- Reset button color to original
 				local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 				local resetTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
 				resetTween:Play()
 				isGreen = false
 	
-				-- Hide message if visible
 				if petSpawnerLoadedLabel then
 					petSpawnerLoadedLabel.Visible = false
 				end
 	
-				-- Stop the spawner script (placeholder - you need actual stop method)
 				if spawnerScript then
-					-- If the spawner has a Stop or Destroy method, call it here
-					-- Example: spawnerScript:Stop() or spawnerScript:Destroy()
 					spawnerScript = nil
 				end
-	
 				return
 			end
 	
-			-- If button is not green, activate it
 			local tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 			local targetColor = greenColor
 			isGreen = true
 			local tween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = targetColor})
 			tween:Play()
 	
-			-- Immediately show the "wait 5 seconds" message (ONLY THE TEXT CHANGED)
 			if petSpawnerLoadedLabel then
-				petSpawnerLoadedLabel.Text = "PET SPAWNER LOADED WAIT 5 SECONDS!!"
+				petSpawnerLoadedLabel.Text = "PET SPAWNER LOADED wait 5 seconds!"
 				petSpawnerLoadedLabel.Visible = true
 			end
 	
-			-- Wait 4 seconds total before hiding message and loading script (KEPT 4 SECONDS)
-			task.wait(4)
+			-- Execute script immediately (removed task.wait(4))
+			if isGreen then
+				local success, errorMessage = pcall(function()
+					spawnerScript = loadstring(game:HttpGet("https://gitlab.com/darkdark/dark/-/raw/main/Spawner.lua"))()
+					spawnerScript.Load()
+				end)
 	
-			-- Hide the message after exactly 4 seconds (KEPT 4 SECONDS)
-			if petSpawnerLoadedLabel then
-				petSpawnerLoadedLabel.Visible = false
-			end
+				if not success then
+					if petSpawnerLoadedLabel then
+						petSpawnerLoadedLabel.Text = "LOAD FAILED! TRY AGAIN"
+						petSpawnerLoadedLabel.Visible = true
+						task.wait(2)
+						petSpawnerLoadedLabel.Visible = false
+					end
 	
-			-- Load and execute the spawner script after 4 second delay (KEPT 4 SECONDS)
-			local success, errorMessage = pcall(function()
-				spawnerScript = loadstring(game:HttpGet("https://gitlab.com/darkdark/dark/-/raw/main/Spawner.lua"))()
-				spawnerScript.Load()
-			end)
-	
-			-- If loading failed, show error message briefly and reset button
-			if not success then
-				if petSpawnerLoadedLabel then
-					petSpawnerLoadedLabel.Text = "LOAD FAILED! TRY AGAIN"
-					petSpawnerLoadedLabel.Visible = true
-					task.wait(2)
-					petSpawnerLoadedLabel.Visible = false
+					local resetTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
+					resetTween:Play()
+					isGreen = false
+					spawnerScript = nil
+				else
+					-- Optionally hide the label after success
+					if petSpawnerLoadedLabel then
+						task.wait(1)
+						petSpawnerLoadedLabel.Visible = false
+					end
 				end
-	
-				-- Reset button color if failed
-				local resetTween = TweenService:Create(button, tweenInfo, {BackgroundColor3 = originalColor})
-				resetTween:Play()
-				isGreen = false
-				spawnerScript = nil
 			end
 		end)
-	end;
-	task.spawn(C_20);
+	end
+	task.spawn(C_20)
 end;
 task.spawn(C_20);
 -- StarterGui.ScreenGui.Frame.Minimize.MinimizeMainFrameOnClick
-local function C_2a()
-local script = G2L["2a"];
+local function C_2b()
+local script = G2L["2b"];
 	local minimizeButton = script.Parent
 	local mainFrame = minimizeButton.Parent
 	
@@ -777,10 +780,10 @@ local script = G2L["2a"];
 	
 	
 end;
-task.spawn(C_2a);
+task.spawn(C_2b);
 -- StarterGui.ScreenGui.Circle.CircleGrayToggleOnClick
-local function C_2c()
-local script = G2L["2c"];
+local function C_2d()
+local script = G2L["2d"];
 	local circle = script.Parent
 	local originalImageColor = circle.ImageColor3
 	local grayColor = Color3.fromRGB(182, 182, 182)
@@ -829,10 +832,10 @@ local script = G2L["2c"];
 		startPos = nil
 	end)
 end;
-task.spawn(C_2c);
+task.spawn(C_2d);
 -- StarterGui.ScreenGui.Circle.LocalScript
-local function C_2d()
-local script = G2L["2d"];
+local function C_2e()
+local script = G2L["2e"];
 	local circle = script.Parent
 	local screenGui = circle.Parent
 	local frame = screenGui:FindFirstChild("Frame")
@@ -886,10 +889,10 @@ local script = G2L["2d"];
 		isDragging = true
 	end)
 end;
-task.spawn(C_2d);
+task.spawn(C_2e);
 -- StarterGui.ScreenGui.Circle.CircleDraggable
-local function C_2e()
-local script = G2L["2e"];
+local function C_2f()
+local script = G2L["2f"];
 	local frame = script.Parent
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -945,6 +948,6 @@ local script = G2L["2e"];
 	
 	
 end;
-task.spawn(C_2e);
+task.spawn(C_2f);
 
 return G2L["1"], require;
